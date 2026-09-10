@@ -144,6 +144,20 @@ a { color: inherit; }
 .hero {
   padding: 96px 0 72px;
   text-align: left;
+  overflow: hidden;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 420px);
+  gap: 40px;
+  align-items: center;
+}
+
+.hero-graphic svg {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .eyebrow {
@@ -410,6 +424,8 @@ a { color: inherit; }
   .work-grid { grid-template-columns: 1fr 1fr; }
   .about-grid { grid-template-columns: 1fr; gap: 16px; }
   .contact-grid { grid-template-columns: 1fr; gap: 32px; }
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-graphic { max-width: 360px; margin: 8px auto 0; order: 2; }
 }
 
 @media (max-width: 640px) {
